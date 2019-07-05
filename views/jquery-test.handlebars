@@ -1,0 +1,26 @@
+{{#section 'head'}}
+<!-- Мы хотим, чтобы Google игнорировал эту страницу -->
+<meta name="robots" content="noindex">
+{{/section}}
+<h1>Тестовая страница</h1>
+<p>Тестируем что-то, связанное с jQuery.</p>
+{{#section 'jquery'}}
+<script>
+    $('document').ready(function() {
+        $('h1').html('jQuery работает');
+    });
+</script>
+{{/section}}
+
+<!doctype html>
+<html>
+<head>
+    <title>Meadowlark Travel</title>
+    {{{_sections.head}}}
+</head>
+<body>
+    {{{body}}}
+    <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+    {{{_sections.jquery}}}
+</body>
+</html>
