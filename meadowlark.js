@@ -27,7 +27,7 @@ app.use(function(req, res, next) {
     req.query.test === '1';
     next();
 });
-//Здесь находятся маршрутры
+//Здесь находятся маршруты
 
 app.use(express.static(__dirname + '/public'));
 
@@ -68,10 +68,8 @@ app.use(function(err, req, res, next) {
     res.status(500);
     res.render('500');
 });
-
+if( app.thing == null ) console.log( 'Бе-е!' );
 app.listen(app.get('port'), function() {
     console.log( 'Express запущен на http://localhost:' +
     app.get('port') + ': нажмите Ctrl+C для завершения.');
 });
-
-if( app.thing == null ) console.log( 'Бе-е!' );
