@@ -3,5 +3,6 @@ node_modules
 *~
 .DS_Store
 Итан Браун - Веб-разработка с применением Node и Express.pdf
+credentials.js
 # Поместите сюда любые другие файлы, которые не хотите вносить
 # Такиже как .DS_Store (OSX) *.bak, etc.
